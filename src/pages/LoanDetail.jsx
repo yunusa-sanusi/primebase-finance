@@ -11,7 +11,7 @@ function LoanDetail() {
 
   useEffect(() => {
     getRepaymentSchedule(transactionId);
-  }, []);
+  }, [transactionId]);
 
   return <section>{loading ? <Loader /> : <RepaymentSchedule />}</section>;
 }

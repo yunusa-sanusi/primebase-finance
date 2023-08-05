@@ -36,7 +36,7 @@ function RepaymentSchedule() {
         />
       </div>
 
-      {data.length > 0 && <LoanScheduleTable loanSchedule={data} />}
+      <LoanScheduleTable loanSchedule={data || []} />
     </section>
   );
 }
